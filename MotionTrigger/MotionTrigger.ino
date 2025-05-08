@@ -1,6 +1,6 @@
 // Pins
-const int pirPin = 2; // Pin to which the PIR sensor output is connected
-const int ledPin = 13; // Built-in LED on the board
+const int pirPin = 6; // Pin to which the PIR sensor output is connected
+const int ledPin = 7; // LED
 
 void setup() {
   pinMode(pirPin, INPUT); // PIR as input
