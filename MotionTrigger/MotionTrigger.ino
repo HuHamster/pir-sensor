@@ -9,14 +9,7 @@ void setup() {
 }
 
 void loop() {
-  int motionDetected = digitalRead(pirPin); // Reading the PIR status
-
-  if (motionDetected == HIGH) {
-    Serial.println("Motion detected!");
-    digitalWrite(ledPin, HIGH); // Turn on the LED
-  } else {
-    digitalWrite(ledPin, LOW); // Turn off the LED
-  }
-
-  delay(100); // Small delay for stability
+  int motion = digitalRead(pirPin);
+  digitalWrite(ledPin, motion);
+  delay(100);
 }
