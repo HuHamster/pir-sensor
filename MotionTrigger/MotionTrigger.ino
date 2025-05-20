@@ -5,7 +5,6 @@ const int ledPin = 7; // LED
 void setup() {
   pinMode(pirPin, INPUT); // PIR as input
   pinMode(ledPin, OUTPUT); // LED as output
-  Serial.begin(9600); // Starting the serial monitor
 }
 
 void loop() {
